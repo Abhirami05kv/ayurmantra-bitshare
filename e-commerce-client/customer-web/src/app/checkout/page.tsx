@@ -1,16 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
 
-// Define the interface for cart items
-interface CartItem {
-  image: string;
-  name: string;
-  price: string;
-  quantity?: number;
-}
-
 const CheckoutPage = () => {
-  const [cartItems, setCartItems] = useState<CartItem[]>([]);
+  const [cartItems, setCartItems] = useState([]);
   const [createAccount, setCreateAccount] = useState(false);
   const [shipToDifferentAddress, setShipToDifferentAddress] = useState(false);
   const [password, setPassword] = useState("");

@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image';
 import { FaBullseye, FaGlobe, FaMugHot } from 'react-icons/fa';
 // import Header from '../Components/Header/Header';
 
@@ -13,30 +14,31 @@ export default function About () {
           <div className="flex-1">
             <h6
                 style={{ fontFamily: "Libre Baskerville" }}
-                className="text-[#7FB53D] italic mb-4 text-lg">About Us
+                className="text-[#7FB53D] italic mb-4 text-lg ml-16">About Us
             </h6>
             <h1 style={{ fontFamily: "'Onest', sans-serif" }}
-                className="text-4xl text-gray-900 mb-4">
+                className="text-4xl text-gray-900 mb-4 ml-16">
                 Authentic Ayurveda <br /> Treatment Centre <br/> Croydon and Epsom, London
             </h1>
-            <hr className="w-100 border-t-2 border-gray-200 mb-4" />
-            <p className="text-gray-600 mb-6">
+            <hr className="w-100 border-t-2 border-gray-200 mb-4 ml-16" />
+            <p className="text-gray-600 mb-6 ml-16 text-justify">
                 A warm welcome awaits you at Ayurmanthra. An Authentic traditional Ayurvedic 
                 treatment center at Croydon and Epsom. In “Sanskrit” Ayurmanthra mean’s 
                 “LIFE WELL-BEING ENERGY”. Ayurmanthra Ayurveda follows a holistic curative 
                 methodology aimed at finding the root-cause of the disease and healing it.
             </p>
-            <button className="bg-[#7FB53D] hover:bg-green-100 hover:text-[#7FB53D] cursor-pointer text-white px-6 py-2 rounded-full font-medium transition">
+            <button className="ml-16 bg-[#7FB53D] hover:bg-green-100 hover:text-[#7FB53D] cursor-pointer text-white px-6 py-2 rounded-full font-medium transition">
                 Learn more
             </button>
           </div>
              {/* Center Image */}
             <div className="flex-1 relative">
-                <div className="overflow-hidden rounded-tl-[120px] shadow-md w-[300px] h-[400px]">
-                    <img
+                <div className="overflow-hidden rounded-tl-[120px] shadow-md w-[300px] h-[400px] relative">
+                    <Image
                     src="/images/ayurveda.jpg"
                     alt="Ayurvedic Ingredients"
-                    className="object-cover w-full h-auto"
+                    fill
+                    className="object-cover"
                     />
                 </div>
                 <div className="absolute bottom-[-30px] rounded-br-[60px] 
@@ -170,9 +172,9 @@ export default function About () {
         <div className=' py-6'>
           <h4 style={{ fontFamily: "'Onest', sans-serif" }} className="font-medium text-xl text-black mb-4">Get in touch</h4>
           <p className="text-sm text-gray-600 mb-2">Consultations & Order</p>
-          <p className="font-semibold text-lg text-gray-900 mb-4">(888) 4000-2424</p>
+          <p className="font-semibold text-lg text-gray-900 mb-4">0203 8282 777</p>
           <p className="text-sm text-gray-600 mb-2">Email Support</p>
-          <p className="font-semibold text-base text-gray-900">hello@domain.tld</p>
+          <p className="font-semibold text-base text-gray-900">info@ayurmanthra.co.uk</p>
         </div>
   </div>
 </footer>

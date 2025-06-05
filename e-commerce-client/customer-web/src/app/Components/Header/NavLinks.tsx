@@ -8,7 +8,7 @@ import Link from 'next/link';
 export default function Navlinks () {
     return(
         <nav style={{ fontFamily: "'Onest', sans-serif" }} className='flex items-center gap-6 text-base font-semibold text-black text-2xl'>
-            <Link href="/" className="hover:text-green-600 cursor-pointer">Home</Link>
+            <Link href="http://localhost:3000/" className="hover:text-green-600 cursor-pointer">Home</Link>
             <Link href="branch" className="hover:text-green-600 cursor-pointer">Branches</Link>
              <Link href="about" className="hover:text-green-600 cursor-pointer">About Us</Link> 
             <Menu as="div" className="relative inline-block text-left">
@@ -22,7 +22,7 @@ export default function Navlinks () {
                <div className="py-1">
                  <MenuItem>
                     {({ active }) => (
-                      <Link href="#"
+                      <Link href="ayurvedaservices"
                         className={`block px-4 py-2 text-sm ${
                             active ? "bg-green-100 text-green-800" : "text-black-700"}`}>
                         Ayurveda Treatment
@@ -31,7 +31,7 @@ export default function Navlinks () {
                  </MenuItem>
                  <MenuItem>
                     {({ active }) => (
-                      <Link href="#"
+                      <Link href="physiotherapyservices"
                         className={`block px-4 py-2 text-sm ${
                             active ? "bg-green-100 text-green-800" : "text-black-700"}`}>
                         Physiotherapy
@@ -40,7 +40,7 @@ export default function Navlinks () {
                  </MenuItem>
                  <MenuItem>
                     {({ active }) => (
-                      <Link href="#"
+                      <Link href="beautytherapyservices"
                         className={`block px-4 py-2 text-sm ${
                             active ? "bg-green-100 text-green-800" : "text-black-700"}`}>
                         Beauty Therapy
@@ -49,7 +49,7 @@ export default function Navlinks () {
                  </MenuItem>
                  <MenuItem>
                     {({ active }) => (
-                      <Link href="#"
+                      <Link href="massagetherapyservices"
                         className={`block px-4 py-2 text-sm ${
                             active ? "bg-green-100 text-green-800" : "text-black-700"}`}>
                         Massage &Yoga
@@ -61,7 +61,6 @@ export default function Navlinks () {
             </Menu>
             <Link href="shop" className="hover:text-green-600 cursor-pointer">Shop</Link>
             <Link href="career" className="hover:text-green-600 cursor-pointer">Careers</Link>
-            <Link href="#" className="hover:text-green-600 cursor-pointer">Contact us</Link>
         </nav>
       
     )

@@ -29,8 +29,8 @@ const branches = [
 
 export default function BranchesPage() {
   return (
-    <div className="min-h-screen px-6 py-10 bg-gray-50 text-gray-800">
-      <h1 style={{ fontFamily: "Libre Baskerville" }} className="text-[#7FB53D] text-3xl italic font-medium mb-10">
+    <div className="min-h-screen px-6 py-10 bg-[#DEEED9] text-gray-800">
+      <h1 style={{ fontFamily: "Libre Baskerville" }} className="text-[#7FB53D] text-3xl italic font-medium mb-10 mt-4">
         Find an Ayurmanthra location near you.</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {branches.map((branch, i) => (

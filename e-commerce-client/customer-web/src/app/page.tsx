@@ -3,6 +3,7 @@ import About from "./about/page";
 import ConsultationPage from "./consultation/page";
 import OurServices from "./ourservices/page";
 import BlogPage from "./blog/page";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -11,10 +12,10 @@ export default function Home() {
         {/* <Header /> */}
         <section className="py-5">
           <div className="flex flex-col md:flex-row items-center justify-between max-w-screen-xl mx-auto px-6 md:px-0">
-            <div className="flex-1">
+            <div className="flex-1 ml-20">
               <h6
                 style={{ fontFamily: "Libre Baskerville" }}
-                className=" text-[#7FB53D] italic  mb-2 fade-in-down"
+                className=" text-[#7FB53D] italic  mb-2 fade-in-down text-xl"
               >
                 Welcome to Ayurmanthra
               </h6>
@@ -25,9 +26,11 @@ export default function Home() {
                 Feel and experience <br /> the traditional <br /> way of ayurveda.
               </h1>
               <div className="relative">
-                <img
+                <Image
                   src="/images/olivee.png"
                   alt="Olive Leaf"
+                  width={160}
+                  height={0}
                   className="absolute -top-4 -left-16 w-40 h-auto z-0 opacity-80 pointer-events-none"
                 />
                 <div className="relative z-10">
@@ -39,9 +42,9 @@ export default function Home() {
                     the Power of Ayurveda for a Balanced Life
                   </p>
 
-                  <button className="bg-[#7FB53D] text-white px-6 py-3 rounded-full font-medium cursor-pointer hover:bg-green-100 hover:text-[#7FB53D] fade-in-down">
+                  {/* <button className="bg-[#7FB53D] text-white px-6 py-3 rounded-full font-medium cursor-pointer hover:bg-green-100 hover:text-[#7FB53D] fade-in-down">
                     Get Started
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>
@@ -49,9 +52,11 @@ export default function Home() {
             <div className="flex-1 flex justify-center items-center ">
               {/* Background uzhichil Image */}
               <div className=" max-w-md w-full h-[450px] z-0 overflow-hidden mt-13">
-                <img
+                <Image
                   src="/images/uzhichal.jpg"
-                  alt="mint"
+                  alt="Uzhichil"
+                  width={500} // or adjust based on your design
+                  height={450}
                   className="w-[85%] h-full object-cover zoom-in"
                   style={{ borderTopLeftRadius: "200px" }}
                 />

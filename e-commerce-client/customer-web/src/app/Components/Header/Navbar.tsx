@@ -13,9 +13,9 @@ export default function Navbar() {
   
 
   return (
-    <div className="flex items-center justify-between max-w-screen-xl mx-auto px-4 py-2">
+    <div className="flex items-center justify-between max-w-screen mx-auto px-4 py-2 bg-[#DEEED9]">
       <div>
-        <img src="/images/ayurmanthralogo.png" alt="Logo" className="h-20 w-40" />
+        <img src="/images/ayurmanthralogo.png" alt="Logo" className="h-20 w-40 ml-24" />
       </div>
 
       <div className="flex items-center gap-3">

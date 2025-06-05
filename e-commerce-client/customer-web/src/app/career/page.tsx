@@ -179,6 +179,30 @@ export default function CareerPage() {
                 <li>Massage Therapist (required)</li>
             </ul>
 
+            <p className="mt-4 italic">Shoot your CV to 
+              <strong> info@ayurmanthra.co.uk</strong>
+            </p>
+
+            <h1 style={{ fontFamily: "Libre Baskerville" }} className="text-[#7FB53D] text-lg italic font-medium mb-10 mt-8">
+              Want to know more about the careers at ayurmantra?
+            </h1>
+            <div className="bg-white rounded p-6 shadow-md">
+              <form className="space-y-2">
+                <div className="grid grid-cols-2 gap-4">
+                  <input type="text" placeholder="Name*" className="border rounded p-2 w-full" />
+                  <input type="text" placeholder="Email*" className="border rounded p-2 w-full" />
+                  <input type="text" placeholder="Phone*" className="border rounded p-2 w-full" />
+                  <input type="text" placeholder="Subject*" className="border rounded p-2 w-full" />
+                </div>
+                <textarea placeholder="Message" className="border rounded p-2 w-full" rows={4} />
+                <button className=" bg-[#7FB53D] text-white py-2 px-4 rounded-full w-fit 
+                cursor-pointer hover:bg-green-100 hover:text-[#7FB53D] ">
+                  Send Message
+                </button>
+              </form> 
+
+            </div>
+
 
           </div>
         </div>

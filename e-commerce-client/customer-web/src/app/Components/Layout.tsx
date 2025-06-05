@@ -23,9 +23,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   }, [isHome]);
 
   return (
-    <>
+    <div className="min-h-screen flex flex-col">
       {showHeader && <Header />}
-      {children}
-    </>
+      <div className="flex-grow -mt-4">
+        {children}
+      </div>
+    </div>
   );
 }
