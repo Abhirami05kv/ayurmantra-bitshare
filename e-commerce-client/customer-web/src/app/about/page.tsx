@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
 import { FaBullseye, FaGlobe, FaMugHot } from 'react-icons/fa';
-// import Header from '../Components/Header/Header';
 
 export default function About () {
   return (
@@ -122,10 +121,12 @@ export default function About () {
         <h2 style={{ fontFamily: "'Onest', sans-serif" }} className="text-2xl font-medium text-black px-6">
           Start Your Wellness Journey Today!
         </h2>
-        <img
+        <Image
           src="/images/medcine.png"
           alt="Medicine"
-          className="object-contain w-60 h-auto"
+          height={0}
+          width={240}
+          className="object-contain h-auto"
         />
       </div>
     </section>
@@ -135,7 +136,13 @@ export default function About () {
         {/* Brand */}
         <div>
           <div className="flex items-center gap-2 mb-3 py-8">
-            <img src="/images/ayurmanthralogo.png" alt="Ayurmanthra" className="h-19 w-auto" />
+            <Image
+              src="/images/ayurmanthralogo.png" 
+              alt="Ayurmanthra" 
+              width={200} 
+              height={76}
+              className="h-[76px] w-auto" 
+            />
           </div>
           <p className="text-gray-600">
             Ayurmanthra brings the wisdom of Ayurveda to modern wellness, offering premium herbal supplements for a balanced and healthy life.

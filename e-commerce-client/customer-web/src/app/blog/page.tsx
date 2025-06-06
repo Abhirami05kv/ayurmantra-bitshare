@@ -58,7 +58,7 @@ export default function BlogPage() {
     let scrollAmount = 0;
     let isScrolling = true;
     const scrollStep = 1;
-    const intervalDelay = 20;
+    // const intervalDelay = 20;
     let animationFrameId: number;
 
     const autoScroll = () => {
@@ -139,7 +139,7 @@ export default function BlogPage() {
 
      {/* Professional Associations */}
      <div className="text-[#7FB53D] italic mb-4 mt-24 ml-18">
-        "All our Ayurvedic practitioners and therapists are active members of"
+        &quot;All our Ayurvedic practitioners and therapists are active members of&quot;
       </div>
 
       <div className="max-w-6xl mx-auto mt-16">

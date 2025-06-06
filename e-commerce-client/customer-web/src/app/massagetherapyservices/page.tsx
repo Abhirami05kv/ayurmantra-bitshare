@@ -14,7 +14,7 @@ type GridItemType = {
 interface GridItemProps {
   item: GridItemType;
   isLastInRow: boolean;
-  isSecondRow?: boolean;
+//   isSecondRow?: boolean;
 //   index?: number;
 }
 
@@ -117,7 +117,7 @@ export default function MassageTherapyServices() {
             {/* SECOND ROW - Text | Image | Text | Image */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-0 border border-t-0 border-gray-200 rounded-b-lg overflow-hidden shadow-sm">
                 {secondRowItems.map((item, index) => (
-                <GridItem key={`second-${index}`} item={item} isLastInRow={index === 3} isSecondRow />
+                <GridItem key={`second-${index}`} item={item} isLastInRow={index === 3} />
                 ))}
             </div>
 
@@ -210,7 +210,7 @@ export default function MassageTherapyServices() {
 }
 
 // Reusable Grid Item Component
-function GridItem({ item, isLastInRow, isSecondRow = false }: GridItemProps) {
+function GridItem({ item, isLastInRow }: GridItemProps) {
     return (
         <div className={`relative ${item.type === 'text' ? 'p-6 bg-white' : ''} 
             border-r ${isLastInRow ? 'border-r-0' : ''} border-gray-200 

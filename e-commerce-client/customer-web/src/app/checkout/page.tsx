@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 
 const CheckoutPage = () => {
-  const [cartItems, setCartItems] = useState([]);
+  const [cartItems, setCartItems] = useState<{ name: string; price: string; quantity?: number }[]>([]);
   const [createAccount, setCreateAccount] = useState(false);
   const [shipToDifferentAddress, setShipToDifferentAddress] = useState(false);
   const [password, setPassword] = useState("");

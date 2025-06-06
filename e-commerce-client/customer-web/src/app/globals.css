@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Onest:wght@100..900&display=swap');
+
 
 :root {
   --background: #ffffff;
@@ -60,6 +62,6 @@ body {
 }
 
 .fade-in-up {
-  animation: fadeInup 3s ease-out forwards;
+  animation: fadeInUp 3s ease-out forwards;
 }
 

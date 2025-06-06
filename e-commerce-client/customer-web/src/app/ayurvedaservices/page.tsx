@@ -38,11 +38,11 @@ const AyurvedaServices = () => {
         
         <p>
           At Ayurmanthra Ayurvedic Treatment Centre Croydon and Epsom, our focus is on authentic 
-          Ayurveda rather than just wellness. Every guest's treatment plan is responsibly 
+          Ayurveda rather than just wellness. Every guest&apos;s treatment plan is responsibly 
           selected and customized to his or her specific needs. The Ayurmanthra Ayurvedic 
           Massage Centre London, UK is a place of retreat for anyone seeking a genuine holistic 
           experience for the well-being of the body and mind, With a focus on authentic Ayurveda 
-          combine with today's possibilities of medical science, the medical center offers an 
+          combine with today&rsquo;s possibilities of medical science, the medical center offers an 
           alternative to Western medicine.
         </p>
         
@@ -116,7 +116,7 @@ const AyurvedaServices = () => {
               <p style={{ fontFamily: "'Onest', sans-serif" }} className="mb-4 text-justify">
                 Shirodhara involves gently pouring warm herbal oil in a continuous stream on 
                 the forehead. This deeply relaxing treatment calms the nervous system, relieves 
-                stress and anxiety, improves sleep quality, and enhances mental clarity. It's 
+                stress and anxiety, improves sleep quality, and enhances mental clarity. It&apos;s 
                 particularly beneficial for those suffering from insomnia, migraines, or 
                 chronic stress.
               </p>
@@ -214,11 +214,11 @@ const AyurvedaServices = () => {
           
           <div className="max-w-7xl mx-auto px-4 py-12 bg-gray-50 rounded-tr-3xl rounded-bl-3xl">
             <h1  className="text-[#7FB53D] text-xl italic font-medium">
-                Ayur Manthra’s VIP Fusion Therapies
+                Ayur Manthra&rsquo;s VIP Fusion Therapies
             </h1>
-            <p style={{ fontFamily: "'Onest', sans-serif" }} className='mt-4 text-justify'>Ayur Manthra’s tailored treatment therapies combining 2 or more therapies into a single 
+            <p style={{ fontFamily: "'Onest', sans-serif" }} className='mt-4 text-justify'>Ayur Manthra&rsquo;s tailored treatment therapies combining 2 or more therapies into a single 
                 session to meet your unique well being needs. These longer sessions are ideal for those 
-                who feel they don’t get enough from the standard sessions or may want to fuse more than two
+                who feel they don&rsquo;t  get enough from the standard sessions or may want to fuse more than two
                 therapies into one longer session.
             </p>
             <h1  className="text-[#7FB53D] text-xl italic font-medium mt-6">

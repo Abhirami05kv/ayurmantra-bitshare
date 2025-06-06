@@ -4,6 +4,7 @@ import Navlinks from "./NavLinks";
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineMenu } from "react-icons/hi";
 import { useState } from "react";
+import Image from "next/image";
 // import { usePathname, useRouter } from "next/navigation";
 
 
@@ -15,7 +16,12 @@ export default function Navbar() {
   return (
     <div className="flex items-center justify-between max-w-screen mx-auto px-4 py-2 bg-[#DEEED9]">
       <div>
-        <img src="/images/ayurmanthralogo.png" alt="Logo" className="h-20 w-40 ml-24" />
+        <Image
+        src="/images/ayurmanthralogo.png" 
+        alt="Logo" 
+        width={150} 
+        height={90}
+        className="h-26 object-contain ml-24" />
       </div>
 
       <div className="flex items-center gap-3">
